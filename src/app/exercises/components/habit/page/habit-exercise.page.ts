@@ -11,9 +11,12 @@ import { MdComponent } from '../../../../dashboard/delivery/components/markdown/
     <app-solution-component>
       <app-markdown statement src="assets/app/exercises/components/habit/README.md" />
       <app-habit-solution solution habit="Meditar" />
-      <app-habit user-solution habit="Correr" />
+      <!--app-habit user-solution habit="Correr" /-->
+      <app-habit user-solution [textComponent]="textPage" />
     </app-solution-component>
   `,
   imports: [SolutionComponent, HabitSolutionComponent, HabitComponent, MdComponent],
 })
-export class EventExercisePage {}
+export class EventExercisePage {
+  textPage = 'ACadena de texto page'
+}

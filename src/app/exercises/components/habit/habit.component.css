@@ -7,3 +7,7 @@
 .habit-name {
   color: var(--primary-color);
 }
+
+.begins-with-letter-a {
+  color: red;
+}

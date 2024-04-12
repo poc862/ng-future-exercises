@@ -7,3 +7,7 @@
 .habit-name {
   color: var(--primary-color);
 }
+
+h3:contains('C') {
+  color: red;
+}

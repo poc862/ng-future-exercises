@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, input } from '@angular/core'
+import { HabitComponent } from '../habit/habit.component'
 
 @Component({
   selector: 'app-habits-list',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core'
   styleUrl: './habits-list.component.css',
   imports: [],
 })
-export class HabitsListComponent {}
+export class HabitsListComponent {
+  habits: string[] = ['Correr', 'Cocinar', 'Leer']
+}
