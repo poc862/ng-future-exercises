@@ -1,0 +1,9 @@
+.habit {
+  padding: 24px 12px;
+  border: 1px solid var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.habit-name {
+  color: var(--primary-color);
+}
