@@ -1,0 +1,16 @@
+<form [formGroup]="habitForm" (ngSubmit)="onSubmit()">
+    <label for="habit-name">Nombre</label>
+    <input id="habit-name" type="text" formControlName="habitName">
+
+    <button type="submit">Crear</button>
+</form>
+
+<ul class="habits-list">
+    @if(habits.length >= 0) {
+        @for (habit of habits; track habit) {
+            <li>{{ habit.name }} {{ habit.date }}</li>
+            } @empty {
+            <li>No hay hábitos creados</li>
+            }
+    }
+</ul>
